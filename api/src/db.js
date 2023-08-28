@@ -7,7 +7,7 @@ const {MONGODB_URI_LOCAL, MONGODB_URI_VERCEL} = process.env;
 async function connectMongo() {
 
   try {
-    await mongoose.connect(MONGODB_URI_LOCAL, {
+    await mongoose.connect(MONGODB_URI_VERCEL, {
       useNewUrlParser: true,
       useUnifiedTopology: true, 
       autoIndex: true,
